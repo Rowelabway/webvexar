@@ -133,7 +133,7 @@ h2 {
 }
 
 .mb-4 {
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 .tm-border-bottom {
@@ -215,7 +215,7 @@ li {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .telegram img {
@@ -224,12 +224,12 @@ li {
 }
 
 .txt-1 {
-    font-size: x-large;
+    font-size: 2.5vw;
     font-weight: 700;
 }
 
 .home-pres{
-    font-size: larger;
+    font-size: 2vw;
     font-weight: 900;
 }
 
@@ -286,6 +286,31 @@ li {
     justify-content: space-between;
 }
 
+#countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .countdown-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 25px;
+  }
+  
+  .countdown-label {
+    margin-bottom: 5px;
+    font-weight: 900;
+  }
+  
+  .countdown-field span {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
 /* Gallery page */
 .gallery-container {
     max-width: 1300px;
@@ -568,17 +593,34 @@ figure.effect-julia:hover p {
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
     }
+
 }
 
 @media (max-width: 1200px) {
     .navbar .navbar-nav .nav-item .nav-link {
         padding: 15px 45px;
     }
+
+
 }
 
 @media (max-width: 1024px) {
     .navbar .navbar-nav .nav-item .nav-link {
         font-size: 1.2rem;
+    }
+
+    .mb-4 {
+        font-size: 24px;
+    }
+
+    .txt-1 {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    
+    .home-pres{
+        font-size: 3vw;
+        font-weight: 900; 
     }
 }
 
@@ -586,7 +628,7 @@ figure.effect-julia:hover p {
     .twitter img {
         width: 50px;
         height: 50px;
-        margin-right: 10px;
+        margin-right: 80px;
         margin-left: 20%;
     }
 
@@ -607,7 +649,6 @@ figure.effect-julia:hover p {
         position: absolute;
         top: 63px;
         right: 0;
-        background: rgb(54 75 96);
         border-radius: 5px;
     }
 
@@ -645,6 +686,20 @@ figure.effect-julia:hover p {
     .tm-footer-right {
         text-align: left;
         margin-top: 10px;
+    }
+
+    .mb-4 {
+        font-size: 24px;
+    }
+
+    .txt-1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .home-pres{
+        font-size: 22px;
+        font-weight: 900; 
     }
 
     .img-home{
