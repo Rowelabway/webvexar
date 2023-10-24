@@ -111,6 +111,7 @@ h2 {
 }
 
 .navbar-collapse {
+  margin-top: 30px;
   display: flex;
   justify-content: flex-end;
 }
@@ -154,6 +155,7 @@ h2 {
 
 .cd-slider-nav li.selected a + .circle,
 .navbar .navbar-nav .nav-item .nav-link:hover + .circle {
+  margin-top: 30px;
   background-color: #fbff00;
 }
 
@@ -212,7 +214,7 @@ li {
   margin-left: auto;
 }
 
-h1 {
+/* h1 {
   font-size: 3.5vw;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   font-family: 'Reggae One', "cursive";
@@ -221,30 +223,33 @@ h1 {
 
 h1:hover {
   color: white;
+} */
+
+.logo{
+  width: 250px;
+  height: auto;
 }
 
 .telegram img {
-  margin-left: 90%;
   width: 3vw;
   height: auto;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.twitter img {
+  width: 3vw;
+  height: auto;
+  margin-left: 50%;
 }
 
 .telegram img:hover {
   filter: drop-shadow(0px 0px 15px #fbff00);
 }
 
-.twitter img {
-  width: 3vw;
-  height: auto;
-  margin-right: 15px;
-  margin-left: 50%;
-}
-
 .twitter img:hover {
   filter: drop-shadow(0px 0px 15px #fbff00);
 }
-
-
 
 .txt-1 {
   font-size: 2.5vw;
@@ -255,6 +260,7 @@ h1:hover {
 .home-pres {
   font-size: 2vw;
   font-weight: 900;
+  margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transform: skew(-8deg); /* Ajusta el ángulo según tus preferencias */
 }
@@ -315,7 +321,7 @@ h1:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin-right: 10px;
   padding-bottom: 25px;
 }
 
