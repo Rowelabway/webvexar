@@ -216,29 +216,15 @@ h1 {
   font-size: 3.5vw;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   font-family: 'Reggae One', "cursive";
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
-h1:hover {
-  background-color: white;
   color: black;
 }
 
-
-.twitter img {
-  width: 3vw;
-  height: auto;
-  margin-right: 45px;
-  margin-left: 15%;
-}
-
-.twitter img:hover {
-  filter: drop-shadow(0px 0px 15px #fbff00);
+h1:hover {
+  color: white;
 }
 
 .telegram img {
+  margin-left: 90%;
   width: 3vw;
   height: auto;
 }
@@ -246,6 +232,19 @@ h1:hover {
 .telegram img:hover {
   filter: drop-shadow(0px 0px 15px #fbff00);
 }
+
+.twitter img {
+  width: 3vw;
+  height: auto;
+  margin-right: 15px;
+  margin-left: 50%;
+}
+
+.twitter img:hover {
+  filter: drop-shadow(0px 0px 15px #fbff00);
+}
+
+
 
 .txt-1 {
   font-size: 2.5vw;
@@ -642,11 +641,15 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 992px) {
+  h1{
+    font-size: 6vw;
+  }
+
   .twitter img {
     width: 50px;
     height: 50px;
-    margin-right: 80px;
-    margin-left: 20%;
+    margin-right: 30px;
+    margin-left: 10%;
   }
 
   .telegram img {
@@ -710,15 +713,16 @@ figure.effect-julia:hover p {
   }
 
   .twitter img {
-    width: 30px;
+    width: 40px;
     height: auto;
     margin-right: 10px;
-    margin-left: 20%;
+
   }
 
   .telegram img {
-    width: 30px;
+    width: 40px;
     height: auto;
+    margin-left: 10px;
   }
 }
 
