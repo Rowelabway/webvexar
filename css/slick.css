@@ -1,4 +1,4 @@
-/* Slick Slider */
+Slick Slider
 .slick-slider {
     position: relative;
     display: block;
@@ -222,7 +222,7 @@
     opacity: 1;
   }
   
-  /* .slick-dots li button:before {
+  .slick-dots li button:before {
     content: '\f111';
     font-family: fontawesome;
     font-size: 18px;
@@ -231,7 +231,7 @@
     opacity: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  } */
+  } 
   
   .slick-dots li.slick-active button:before {
     color: red;
