@@ -18,19 +18,36 @@ const chart = new Chart(ctx, {
         }]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
+      scales: {
+          x: {
+              type: "time",
+              ticks: {
+                  autoSkip: true,
+                  maxTicksLimit: 20,
+              },
+              display: true,
+              scaleLabel: {
+                  display: true,
+                  labelString: "Point"
+              }
+          },
+          y: {
+              display: true,
+              scaleLabel: {
+                  display: true,
+                  labelString: "Value"
+              }
+          }
+      }
+  }
 });
+
 
 // Obtener el MAX TOTAL SUPPLY de tu moneda
 function getMaxTotalSupply() {
     fetch(url, {
+      method: 'GET',
+      mode: 'cors',
         headers: {
             "Content-Type": "application/json",
             "Authorization": `Bearer ${apiKey}`
