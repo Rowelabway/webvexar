@@ -30,3 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 10); // Agregar una pequeña demora para la animación
     });
 });
+

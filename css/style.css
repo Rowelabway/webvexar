@@ -15,31 +15,27 @@ body {
 .popup {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background-color: #f1f1f1;
   padding: 20px;
+  width: 250px;
+  height: 75px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  z-index: 999;
+  text-align: center;
+  display: flex; /* Utiliza display flex para centrar vertical y horizontalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
-.fade-out {
-  animation: fadeOut 3s;
+/* Estilo del texto dentro de la ventana emergente con la fuente 'Reggae One' */
+.popup p {
+  color: #333;
+  font-size: 20px;
+  font-family: 'Reggae One', cursive;
 }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-
 /* Estilos generales */
 ::-webkit-scrollbar {
   width: 15px;
@@ -505,7 +501,7 @@ figure.effect-vexar p {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-50%, 0, 0); /* Centramos horizontalmente */
   transform: translate3d(-50%, 0, 0); /* Centramos horizontalmente */
-  opacity: 0; /* Inicialmente oculto */
+  opacity: 1; /* Inicialmente oculto */
 }
 /* figure.effect-vexar p:first-child {
   -webkit-transition-delay: 0.15s;
@@ -570,6 +566,7 @@ figure.effect-vexar:hover p {
   /* Márgenes superiores */
   margin-bottom: 80px;
 }
+
 
 /* Estilo para el contenedor principal */
 .tokenomics-container {
@@ -668,6 +665,12 @@ figure.effect-vexar:hover p {
 }
 
 @media (max-width: 1024px) {
+
+  .nav-item {
+    position: relative;
+    font-size: 2vw;
+  }
+
   .mb-4 {
     font-size: 24px;
   }
